@@ -1,0 +1,53 @@
+{
+  "folders": [
+    {
+      "name": "GlowSync (Root)",
+      "path": "."
+    },
+    {
+      "name": "Backend — Node/Express",
+      "path": "./backend"
+    },
+    {
+      "name": "Frontend — React",
+      "path": "./frontend"
+    }
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/.git": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/build": true
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "emmet.includeLanguages": { "javascript": "javascriptreact" }
+  },
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "burkeholland.simple-react-snippets",
+      "christian-kohler.path-intellisense",
+      "ms-vscode.vscode-json"
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Start Backend",
+        "type": "node",
+        "request": "launch",
+        "program": "${workspaceFolder:Backend — Node/Express}/src/server.js",
+        "envFile": "${workspaceFolder:Backend — Node/Express}/.env",
+        "console": "integratedTerminal"
+      }
+    ]
+  }
+}
